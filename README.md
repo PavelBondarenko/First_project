@@ -38,3 +38,7 @@ Hello world, i'm learm php!
 [тег]: адрес://ссылки.здесь "Заголовок ссылки"
 Изображения:
 ![Alt-текст](адрес://ссылки.здесь "Заголовок изображения")
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
