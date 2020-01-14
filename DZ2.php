@@ -18,12 +18,17 @@
     //     $money = $money + ($money * ($proc / 12 / 100);
     // }
     // echo $money;
-    do {
+    // do {
+    //     $money = $money + ($money * ($proc / 12 / 100));
+    //     $term++;
+    // } while (
+    //     $term <= 14
+    // );
+    // echo $money;
+    while ($term <= 14) {
         $money = $money + ($money * ($proc / 12 / 100));
         $term++;
-    } while (
-        $term <= 14
-    );
+    }
     echo $money;
 
     ?>
