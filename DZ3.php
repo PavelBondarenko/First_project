@@ -11,14 +11,19 @@
 <body>
     <?php
     $arr = array(1, 3, 4, 5, 6, 7);
+
     function mul($arr)
     {
-        for ($i = 0; $i < count($arr); $i++) {
-            $arr[$i] = $arr[$i] > $i;
-            $g = $arr[$i];
+        $max = $arr[0];
+        for ($i = 1; $i <= count($arr); $i++) {
+            if ($arr[$i] > $max); {
+                $max = $arr[$i];
+            }
         }
-        return $arr;
+        return $max;
     }
+
+    echo mul($arr);
     ?>
 </body>
 
