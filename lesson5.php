@@ -10,19 +10,23 @@
 
 <body>
     <?php
-    $arr = array(10, 3, 4, 5, 6, 28);
-
-    function num($arr){
-        $max = $arr[0];
-        for ($i=1; $i <= count($arr) ; $i++) {
-            if ($arr[$i] > $max){
-                $max = $arr[$i];
-            }
+    function num($n)
+    {
+        $f = 1;
+        for ($i = 1; $i <= $n; $i++) {
+            $f = $f * $i;
         }
-        return $max;
+        return $f;
     }
+    echo num(2);
+    echo "<br>";
+    echo num(3);
+    echo "<br>";
+    echo num(4);
+    echo "<br>";
+    echo num(5);
 
-    echo num($arr);
+
     ?>
 </body>
 
