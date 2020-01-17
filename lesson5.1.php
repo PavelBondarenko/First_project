@@ -10,19 +10,25 @@
 
 <body>
     <?php
-    function num($n)
+    function fk($n)
     {
-        $f = 1;
-        for ($i = 1; $i <= $n; $i++) {
-            $f = $f * $i;
+        if ($n == 0) {
+            $f = 1;
+        } else {
+            $f = fk($n - 1) * $n;
         }
         return $f;
     }
-    echo num(2);
+    echo fk(0);
     echo "<br>";
-    echo num(3);
+    echo fk(1);
     echo "<br>";
-    echo num(4);
+    echo fk(2);
+    echo "<br>";
+    echo fk(3);
+    echo "<br>";
+    echo fk(4);
+    echo "<br>";
     ?>
 </body>
 
