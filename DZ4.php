@@ -10,34 +10,34 @@
 
 <body>
     <?php
-    function fibonacci($num) // $num - номер интересующего нас элемента
-    {
-        // общий случай. Идем от 3го до требуемого номера
-        $pre_pre = 0; // элемент, скажем так, предпредыдущий.
-        $current = 1; // текущий
-        for ($i = 3; $i <= $num; $i++) {
-            $pre = $current; // бывший текущий становится предыдущим
-            $current = $pre + $pre_pre; // определяем текущий элемент
-            $pre_pre = $pre; // бывший предыдущий становится предпредыдущим
-        }
-        return $current;
-    }
 
-    /*** Основная часть программы ***/
-    $n = 1;
-    echo fibonacci($n); // 0,1,1,2,3 - получается 3
-
-
-    // function fib($n, $g)
+    // function fibonacci($num)
     // {
-    //     if ($n == 1 && $g == 2) {
-    //         $f = 1;
-    //         $f = fib($n - 1) + fib($g - 2);
+    //     $pre_pre = 0;
+    //     $current = 1;
+    //     for ($i = 1; $i <= $num; $i++) {
+    //         $pre = $current;
+    //         $current = $pre + $pre_pre;
+    //         $pre_pre = $pre;
     //     }
-    //     return $f;
+    //     return $current;
     // }
-    // echo fib(1, 2);
-    // ?>
+    // $n = 4;
+    // echo fibonacci($n);
+
+
+    function fib($n)
+    {
+        $f = [0, 1];
+        for ($i = 1; $i < $n; $i++) {
+            $f[] = $f[$i] + $f[$i - 1];
+        }
+        return $f;
+    }
+    echo "<pre>";
+    print_r(fib(4));
+
+    ?>
 </body>
 
 </html>
