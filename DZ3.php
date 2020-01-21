@@ -12,10 +12,11 @@
     <?php
     $arr = array(10, 3, 4, 5, 6, 28);
 
-    function num($arr){
+    function num($arr)
+    {
         $max = $arr[0];
-        for ($i=1; $i <= count($arr) ; $i++) {
-            if ($arr[$i] > $max){
+        for ($i = 1; $i <= count($arr); $i++) {
+            if ($arr[$i] > $max) {
                 $max = $arr[$i];
             }
         }
