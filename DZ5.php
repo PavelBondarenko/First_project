@@ -10,10 +10,13 @@
 
 <body>
     <?php
-    $f = fopen("Counter.txt", "a+");
-    $count = fgets($f);
+    $f=fopen("count.dat","a+"); 
+    $count=fgets($f);
     $count++;
-    echo "Количество посещений: $count";
+    ftruncate($f,0);
+    fwrite($f,$count);
+    fclose($f);
+    echo "Счётчик посещений: $count";
     ?>
 </body>
 
