@@ -8,14 +8,10 @@
 </head>
 <body>
     <?php
-
-    //print_r($_POST);
-    echo $_POST['num1']*$_POST['num2'];
-    $a = $_POST['num1'];
-    $b = $_POST['num2'];
-    $c = $_POST['num1'] * $_POST['num2'];
-    file_put_contents('text.txt', "$a * $b = $c". "\n", FILE_APPEND);
+    $s = $_POST['s'];
+    $b = $_POST['r'];
+    echo $result = "$s;$b;\n";
+    file_put_contents("data.csv", $result, FILE_APPEND);
     ?>
-      
 </body>
 </html>

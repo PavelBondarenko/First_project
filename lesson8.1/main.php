@@ -8,14 +8,12 @@
 </head>
 <body>
     <?php
+    $g = $_POST['voting'];;
+    echo $result = "$g\n";
+    $data = explode("data.txt", "");
+    echo $data[0];
+    $main = implode($data);
 
-    //print_r($_POST);
-    echo $_POST['num1']*$_POST['num2'];
-    $a = $_POST['num1'];
-    $b = $_POST['num2'];
-    $c = $_POST['num1'] * $_POST['num2'];
-    file_put_contents('text.txt', "$a * $b = $c". "\n", FILE_APPEND);
     ?>
-      
 </body>
 </html>

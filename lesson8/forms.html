@@ -7,15 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
+    <form action="main.php" method="POST">
+        <textarea name="r" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input type="email" name="s">
+        <br>
+        <input type="submit" value="OK">
 
-    //print_r($_POST);
-    echo $_POST['num1']*$_POST['num2'];
-    $a = $_POST['num1'];
-    $b = $_POST['num2'];
-    $c = $_POST['num1'] * $_POST['num2'];
-    file_put_contents('text.txt', "$a * $b = $c". "\n", FILE_APPEND);
-    ?>
-      
+    </form>
 </body>
 </html>
