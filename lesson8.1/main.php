@@ -21,6 +21,10 @@
     $arr = explode(';', file_get_contents('opros.csv'));
     $arr[$i]++;
     file_put_contents('opros.csv', implode(";", $arr));
+
+    foreach ($arr as $key => $value) {
+       echo "$key - $value<br>";
+    }
     ?>
 </body>
 
