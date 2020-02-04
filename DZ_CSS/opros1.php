@@ -46,7 +46,7 @@
     <div class="opros">
         <form action="opros2.php" method="POST">
             <?php
-            $arr = file('votting.txt');
+            $arr = file('opros.csv');
             ?>
             <h2><?= $arr[0] ?></h2>
             <div class="labell"><?php

@@ -35,11 +35,11 @@
     <div class="opros2">
     <?php
     $ind = $_POST['voting'];
-    $arr = file('votting.txt');
+    $arr = file('opros.csv');
     $buf = explode(" - ", $arr[$ind]);
     $buf[1] += 1;
     $arr[$ind] = implode(" - ", $buf) . "\n";
-    file_put_contents('votting.txt', $arr);
+    file_put_contents('opros.csv', $arr);
     // foreach ($arr as $value){
     //     echo"$value<br>";
     // }
