@@ -16,6 +16,7 @@
     $arr = file("mess.txt");
     foreach ($arr as $value) {
         echo "<div class='csss'>$value</div>";
+        // echo "<div class = '" . (($key % 2) ? 'odd' : 'even') . "'> $value </div>";
     }
     ?>
 </body>

@@ -4,3 +4,10 @@
 .csss:nth-child(even){
     background-color: blue;
 }
+
+/* .even{
+    background-color: green;
+}
+.odd{
+    background-color: blue;
+} */
