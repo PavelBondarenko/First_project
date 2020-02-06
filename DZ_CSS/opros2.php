@@ -59,6 +59,8 @@
         $buf = explode(' - ', $arr[$i]);
         echo $buf[0] . " - " . round($buf[1] / $sum * 100) . "%";
         echo "  <img src='pixel.png' width='" . (100 * $buf[1] / $sum) . "' height='30'><br>";
+        // $result = round(($buf[1] / $sum * 100), 2);
+        // echo "<div class ='line' style='width: {$result}px'></div><br> $buf[0] - $result %<br>";
     }
     ?>
     </div>
