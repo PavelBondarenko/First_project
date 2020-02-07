@@ -8,7 +8,7 @@
 </head>
 <body>
     <form action="?" method="POST">
-    <input type="text"  name="name" value="<?=$_POST['name']?>" >
+    <input type="text"  name="name" value="<?=!empty($_POST['name'])?$_POST['name']:"" ?>" >
     <input type="text" name="chat">  
     <input type="submit" value="ok">
     </form>
