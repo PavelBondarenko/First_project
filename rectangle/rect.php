@@ -12,7 +12,11 @@
 <body>
     <div class="rectangle" style="width: <?= $_GET['a']?>px; height: <?= $_GET['b']?>px; background-color: <?= $_GET['color']?>"></div>
     <?php
-    print_r($_GET);
+    // print_r($_GET);
+    $first = $_GET['a'];
+    $second = $_GET['b'];
+    $area = $_GET['a'] * $_GET['b'];
+    echo  " Площадь прямоугольника = $area ." ;
     ?>
 </body>
 
